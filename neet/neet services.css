@@ -1,0 +1,924 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.brush-title {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    background: url('brush-effect.png') no-repeat center;
+    background-size: contain;
+    padding: 10px 30px;
+    color: black;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Left Section */
+.left-section {
+    width: 30%;
+}
+
+.left-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.left-section span {
+    color: #3D348B;
+}
+
+.left-section p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid black;
+    background: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Middle Doctor Image */
+.middle-image img {
+    width: 250px;
+}
+
+/* Right Section */
+.right-section {
+    position: relative;
+    width: 40%;
+}
+
+.yellow-circle {
+    width: 400px;
+    height: 450px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.stat img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+/* Floating Buttons */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.call-btn,
+.whatsapp-btn {
+    width: 50px;
+    margin: 5px;
+}
+
+.call-btn img,
+.whatsapp-btn img {
+    width: 100%;
+}
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Quote Section */
+.quote-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.quote-box {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #3D348B;
+}
+
+.quote-box::before {
+    content: "\201C";  /* Single large quote */
+    position: absolute;
+    top: 0;  /* Adjust position */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;  /* Large size */
+    color: rgba(61, 52, 139, 0.15);  /* Light faded color */
+    font-weight: bold;
+    z-index: -1; /* Behind text */
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #3D348B;
+    margin: 10px 0;
+}
+
+.quote-text {
+    font-size: 18px;
+    color: #3D348B;
+    font-weight: bold;
+    position: relative;
+    white-space: nowrap;
+}
+
+.quote-mark {
+    font-size: 40px;
+    color: rgba(61, 52, 139, 0.2);
+    position: absolute;
+}
+
+/* Brush Effect Section */
+.brush-section {
+    margin-top: 20px;
+    position: relative;
+}
+
+.brush-text {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background: url('brush-effect.png') no-repeat center;
+    background-size: contain;
+    padding: 10px 20px;
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px;
+    background-color: #ffffff; /* White background */
+    display: flex;
+    justify-content: center;
+}
+
+/* Feature Container */
+.feature-container {
+    display: flex;
+    justify-content: space-between; /* Space between cards */
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+/* Feature Card */
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-top: 3px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-top: 3px solid #fdd835; /* Yellow highlight on hover */
+}
+
+/* Feature Icon Box */
+.feature-icon {
+    background-color: #fdd835; /* Yellow background */
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Feature Icons */
+.feature-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Feature Title */
+.feature-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Feature Description */
+.feature-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Ensure Responsiveness */
+@media (max-width: 1200px) {
+    .feature-container {
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        justify-content: center; /* Centers the blocks when wrapped */
+    }
+
+    .feature-card {
+        width: 45%; /* Two cards per row for medium screens */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        width: 100%; /* Full width for small screens */
+    }
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+/* Feature Container */
+.feature-container {
+    display: flex;
+    justify-content: space-between; /* Ensures spacing */
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Feature Card */
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-top: 3px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-top: 3px solid #fdd835;
+}
+
+/* Feature Icon */
+.feature-icon {
+    background-color: #fdd835;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Feature Icons */
+.feature-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Feature Title */
+.feature-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Feature Description */
+.feature-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .feature-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        width: 100%;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Hero Container */
+.hero-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Logo */
+.logo img {
+    max-width: 250px;
+    height: auto;
+}
+
+/* Hero Text */
+.hero-text {
+    text-align: left;
+    font-size: 18px;
+    color: #2e1a73;
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+/* Title Section */
+.title-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+.title-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2e1a73;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Pricing Header */
+.pricing-container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.pricing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b8a89a;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.pricing-box {
+    text-align: right;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    font-size: 18px;
+}
+
+.new-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+
+.buy-button {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Services Table */
+.services {
+    margin-top: 20px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffd700;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.details {
+    flex-grow: 2;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.status {
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.offline {
+    background-color: #2e1a73;
+}
+
+.online {
+    background-color: #2e1a73;
+}
+
+.offline-online {
+    background-color: #2e1a73;
+}
+
+.checkmark {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Services Table */
+.services-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Each Service Item */
+.service-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffd700; /* Yellow Background */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Service Icons */
+.icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Service Text */
+.details {
+    flex-grow: 2;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Status Box */
+.status {
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 130px;
+}
+
+.online {
+    background-color: #2e1a73; /* Purple */
+}
+
+.tele-support {
+    background-color: #2e1a73;
+}
+
+.offline-online {
+    background-color: #2e1a73;
+}
+
+/* Checkmark Section */
+.checkmark {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Services Table */
+.services-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Each Service Item */
+.service-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffd700; /* Yellow Background */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Service Icons */
+.icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Service Text */
+.details {
+    flex-grow: 2;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.details p, .details ul {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.details ul {
+    padding-left: 20px;
+}
+
+.details ul li {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+/* Additional Text Formatting */
+.small-text {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.complimentary {
+    font-size: 14px;
+    font-weight: normal;
+    color: green;
+}
+
+/* Status Box */
+.status {
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 130px;
+}
+
+.online {
+    background-color: #2e1a73; /* Purple */
+}
+
+.demand {
+    background-color: #ffd700; /* Yellow */
+    font-weight: bold;
+    color: black;
+}
+
+/* Checkmark Section */
+.checkmark {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
+
+
+
+/* Buy Package Section */
+.package-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buy-button {
+    background-color: #d9534f;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buy-button:hover {
+    background-color: #c9302c;
+}
+
+.conditions {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Services Table */
+.services-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Each Service Item */
+.service-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffd700; /* Yellow Background */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Service Icons */
+.icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Service Text */
+.details {
+    flex-grow: 2;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Status Box */
+.status {
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 130px;
+}
+
+.online {
+    background-color: #2e1a73; /* Purple */
+}
+
+.tele-support {
+    background-color: #2e1a73;
+}
+
+.offline-online {
+    background-color: #2e1a73;
+}
+
+/* Checkmark Section */
+.checkmark {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: #fff;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-links h3, 
+.footer-contact h3, 
+.footer-follow h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-follow .social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.footer-follow input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 2px dashed black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.subscribe-btn {
+    background-color: #ffcc00;
+    padding: 8px 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    border-top: 2px dotted black;
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

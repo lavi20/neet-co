@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="contact-section">
+        <!-- Heading -->
+        <div class="contact-heading">
+            <div class="brush-text">Get In Touch</div>
+            <p>We Are Ready to Help You 24/7.</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" placeholder="" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" placeholder="" required>
+
+                    <label for="phone">Phone*</label>
+                    <input type="tel" id="phone" placeholder="" required>
+
+                    <label for="state">State*</label>
+                    <select id="state" required>
+                        <option value="" disabled selected>Select state</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+    <option value="Assam">Assam</option>
+    <option value="Bihar">Bihar</option>
+    <option value="Chhattisgarh">Chhattisgarh</option>
+    <option value="Goa">Goa</option>
+    <option value="Gujarat">Gujarat</option>
+    <option value="Haryana">Haryana</option>
+    <option value="Himachal Pradesh">Himachal Pradesh</option>
+    <option value="Jharkhand">Jharkhand</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Kerala">Kerala</option>
+    <option value="Madhya Pradesh">Madhya Pradesh</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Manipur">Manipur</option>
+    <option value="Meghalaya">Meghalaya</option>
+    <option value="Mizoram">Mizoram</option>
+    <option value="Nagaland">Nagaland</option>
+    <option value="Odisha">Odisha</option>
+    <option value="Punjab">Punjab</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Sikkim">Sikkim</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Telangana">Telangana</option>
+    <option value="Tripura">Tripura</option>
+    <option value="Uttar Pradesh">Uttar Pradesh</option>
+    <option value="Uttarakhand">Uttarakhand</option>
+    <option value="West Bengal">West Bengal</option>
+    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+    <option value="Chandigarh">Chandigarh</option>
+    <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+    <option value="Lakshadweep">Lakshadweep</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Puducherry">Puducherry</option>
+    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+    <option value="Ladakh">Ladakh</option>
+                    </select>
+
+                    <label for="subject">Subject*</label>
+                    <input type="text" id="subject" placeholder="" required>
+
+                    <label for="message">Your Message*</label>
+                    <textarea id="message" placeholder="" required></textarea>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="promotional" required>
+                        <label for="promotional">
+                            I agree to receive promotional & informational communication from NEET ADVISOR.*
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">
+                            I accept all <a href="#">Terms and Conditions.</a>*
+                        </label>
+                    </div>
+
+            <!-- Load reCAPTCHA API -->
+           <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+           <!-- Add reCAPTCHA Widget -->
+            <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+        
+
+            <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="info-box">
+                    <div class="icon"><img src="project1 image/call-Photoroom.png" alt="Phone"></div>
+                    <div class="info-text">
+                        <h3>Talk to us</h3>
+                        <p><strong>Phone:</strong> +91-991-120-3280</p>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div class="info-box">
+                    <div class="icon"><img src="project1 image/mail-Photoroom.png" alt="Mail"></div>
+                    <div class="info-text">
+                        <h3>Mail us @</h3>
+                        <p>info@neetadvisor.com</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="info-box">
+                    <div class="icon"><img src="project1 image/map-Photoroom.png" alt="Location"></div>
+                    <div class="info-text">
+                        <h3>Delhi Office</h3>
+                        <p>US 1 & 2, Ground Floor, U.S. Complex, Jasola, New Delhi - 110076</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="info-box">
+                    <div class="icon"><img src="project1 image/map-Photoroom.png" alt="Location"></div>
+                    <div class="info-text">
+                        <h3>Mumbai Office</h3>
+                        <p>No. 810, B Wing, Kanakia Wall Street, Andheri East, Mumbai - 400093</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="#" class="call-button"><img src="call.png" alt="Call"></a>
+        <a href="#" class="whatsapp-button"><img src="whatsapp.png" alt="WhatsApp"></a>
+    </div>
+
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="project1 image/logo.png" alt="NEET Advisor">
+            </div>
+            
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>✔ Neet Guide</li>
+                    <li>✔ Gallery</li>
+                    <li>✔ About us</li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>📞 +91-991-120-3280</p>
+                <p>📍 US 1 & 2, Ground Floor, U.S. Complex, Jasola, Delhi-110076</p>
+                <p>📍 No. 810, B Wing, Kanakia Wall Street, Andheri East, Mumbai-400093</p>
+            </div>
+
+            <div class="footer-follow">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <img src="project1 image/insta-Photoroom.png" alt="Instagram">
+                    <img src="project1 image/linked in-Photoroom.png" alt="LinkedIn">
+                    <img src="project1 image/youtube-Photoroom.png" alt="YouTube">
+                    <img src="project1 image/facebook.png" alt="Facebook">
+                </div>
+                <input type="email" placeholder="Your Email">
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>All Rights Reserved Copyright NEET Advisor © 2024</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Refund Policy</a> | <a href="#">Sitemap</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1 class="gallery-title">Gallery</h1>
+
+    <div class="nav-links">
+        <a href="#" class="nav-link active" onclick="showSection(event, 'international')">Going International</a>
+        <a href="#" class="nav-link" onclick="showSection(event, 'guidance')">Guidance Across Country</a>
+        <a href="#" class="nav-link" onclick="showSection(event, 'neet')">NEET PG Info Sessions</a>
+        <a href="#" class="nav-link" onclick="showSection(event, 'seminars')">Seminars and Workshops</a>
+        <a href="#" class="nav-link" onclick="showSection(event, 'clients')">Happy Clients</a>
+    </div>
+
+    <div id="international" class="gallery-section">
+        <h2>Going International</h2>
+        <div class="gallery">
+            <div><img src="project1 image/gallery 1.webp" alt="SIM Singapore"></div>
+            <div><img src="project1 image/gallery2.webp" alt="Dubai Sharjah"></div>
+            <div><img src="image3.jpg" alt="SP Jain Singapore"></div>
+            <div><img src="project1 image/gallery 1.webp" alt="SIM Singapore"></div>
+            <div><img src="project1 image/gallery2.webp" alt="Dubai Sharjah"></div>
+            <div><img src="image3.jpg" alt="SP Jain Singapore"></div>
+        </div>
+    </div>
+
+    <div id="guidance" class="gallery-section" style="display: none;">
+        <h2>Guidance Across Country</h2>
+        <div class="gallery">
+            <div><img src="project1 image/gallery 2 1.webp" alt="Kota"></div>
+            <div><img src="project1 image/gallery 2 2.webp" alt="Guwahati"></div>
+            <div><img src="guidance3.jpg" alt="Jaipur"></div>
+            <div><img src="project1 image/gallery 2 1.webp" alt="Kota"></div>
+            <div><img src="project1 image/gallery 2 2.webp" alt="Guwahati"></div>
+            <div><img src="guidance3.jpg" alt="Jaipur"></div>
+        </div>
+    </div>
+
+    <div id="neet" class="gallery-section" style="display: none;">
+        <h2>NEET PG Info Sessions</h2>
+        <div class="gallery">
+            <div><img src="neet1.jpg" alt="Session 1"></div>
+            <div><img src="neet2.jpg" alt="Session 2"></div>
+        </div>
+    </div>
+
+    <div id="seminars" class="gallery-section" style="display: none;">
+        <h2>Seminars and Workshops</h2>
+        <div class="gallery">
+            <div><img src="seminar1.jpg" alt="Seminar 1"></div>
+            <div><img src="seminar2.jpg" alt="Seminar 2"></div>
+        </div>
+    </div>
+
+    <div id="clients" class="gallery-section" style="display: none;">
+        <h2>Happy Clients</h2>
+        <div class="gallery">
+            <div><img src="client1.jpg" alt="Client 1"></div>
+            <div><img src="client2.jpg" alt="Client 2"></div>
+        </div>
+    </div>
+
+
+     
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="project1 image/logo.png" alt="NEET Advisor">
+            </div>
+            
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>✔ Neet Guide</li>
+                    <li>✔ Gallery</li>
+                    <li>✔ About us</li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>📞 +91-991-120-3280</p>
+                <p>📍 US 1 & 2, Ground Floor, U.S. Complex, Jasola, Delhi-110076</p>
+                <p>📍 No. 810, B Wing, Kanakia Wall Street, Andheri East, Mumbai-400093</p>
+            </div>
+
+            <div class="footer-follow">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <img src="project1 image/insta-Photoroom.png" alt="Instagram">
+                    <img src="project1 image/linked in-Photoroom.png" alt="LinkedIn">
+                    <img src="project1 image/youtube-Photoroom.png" alt="YouTube">
+                    <img src="project1 image/facebook.png" alt="Facebook">
+                </div>
+                <input type="email" placeholder="Your Email">
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>All Rights Reserved Copyright NEET Advisor © 2024</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Refund Policy</a> | <a href="#">Sitemap</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
